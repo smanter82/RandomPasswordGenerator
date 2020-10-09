@@ -95,6 +95,7 @@ You are required to submit the following for review:
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
 Deployed site:  https://smanter82.github.io/RandomPasswordGenerator/
+
 Screenshots of deployed site:
 ![Screenshot of Deployed Site](./Password_generator.png)
 ![Screenshot of Working Website](./password_generator_with_password.png)
