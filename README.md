@@ -96,5 +96,5 @@ You are required to submit the following for review:
 
 Deployed site:  https://smanter82.github.io/RandomPasswordGenerator/
 Screenshots of deployed site:
-![Screenshot of Wesite](./password_generator.png)
+![Screenshot of Deployed Site](./password_generator.png)
 ![Screenshot of Working Website](./password_generator_with_password.png)
