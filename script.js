@@ -71,6 +71,10 @@ function generatePassword() {
     passwordArray=passwordArray.concat(lowLetterArray);
     console.log(passwordArray)
   }
+  if (!confirmSpecial && !confirmNumbers && !confirmUppercase && !confirmLowercase) {
+    alert("Error:  Must select at least one character type.  Try again.")
+    generatePassword()
+  }
 
 for (var i = 0; i<convertString; i++) {
   var passwordIndex = Math.floor(Math.random() * passwordArray.length);
