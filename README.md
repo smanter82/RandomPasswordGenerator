@@ -98,3 +98,5 @@ Deployed site:  https://smanter82.github.io/RandomPasswordGenerator/
 Screenshots of deployed site:
 ![Screenshot of Deployed Site](./Password_generator.png)
 ![Screenshot of Working Website](./password_generator_with_password.png)
+
+Some code done in collaboration with 5 PM Bootcamp study group classmates: https://github.com/arensalmela, https://github.com/dmaysteinman, https://github.com/EddiePhi, https://github.com/ReindeerCode, Ethan Wager, https://github.com/mdjonestwo, https://github.com/Dlabins
