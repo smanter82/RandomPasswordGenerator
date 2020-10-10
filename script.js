@@ -1,3 +1,4 @@
+//set arrays for password characters
 let symArray = [
   '!',
   ',',
@@ -43,6 +44,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
+//set function to call prompts for user to set terms of password
 function generatePassword() {
   var findPassword = prompt("How many characters would you like your password to be?  (Min of 8)");
   var convertString = parseInt(findPassword);
@@ -51,7 +53,11 @@ function generatePassword() {
 
   if (findPassword === null || findPassword === "" ||convertString < 8 || convertString > 128) {
     alert("Error:  Passwords must be between 8 and 128 characters.")
-    generatePassword()
+  //reset values if user has caused error by choosing value outside of expected parameters.
+    findPassword = '';
+    convertString = 0;
+    passwordArray = [];
+    password = "";
   } else {
     var confirmSpecial = confirm("Click ok to include special characters in password.");
     var confirmNumbers = confirm("Click ok to include numbers in password.");
@@ -73,11 +79,16 @@ function generatePassword() {
   }
   if (!confirmSpecial && !confirmNumbers && !confirmUppercase && !confirmLowercase) {
     alert("Error:  Must select at least one character type.  Try again.")
-    generatePassword()
+  //reset values if user causes error by not selecting at least one character type
+    findPassword = '';
+    convertString = 0;
+    passwordArray = [];
+    password = "";
   }
 
+//Set randomization to select unique password
 for (var i = 0; i<convertString; i++) {
-  var passwordIndex = Math.floor(Math.random() * passwordArray.length);
+  var passwordIndex = Math.floor(Math.random() * (passwordArray.length-1));
   password += passwordArray[passwordIndex]
 } 
 
